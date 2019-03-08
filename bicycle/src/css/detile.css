@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > img {
+  width: 100%;
+}
+
+.wrapper > h1 {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.wrapper > p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.wrapper > div {
+  padding: 10px 50px;
+}
+
+.wrapper > span {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+}
+
+.wrapper .an {
+  margin-top: 20px;
+}
+
+.wrapper .an button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: #ff0;
+  border-radius: 25px;
+}

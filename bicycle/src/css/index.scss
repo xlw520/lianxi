@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        input {
+            width: 80%;
+            height: 70%;
+            padding: 0 10px;
+            font-size: 17px;
+            border: 1px solid #ccc;
+        }
+
+        i {
+            width: 50px;
+            font-size: 25px;
+        }
+    }
+
+    section {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        .left{
+            width: 120px;
+            border-right: 1px solid #ccc;
+            box-sizing: border-box;
+            overflow: hidden;
+            li{
+                height: 50px;
+                text-align: center;
+                line-height: 60px;
+                font-size: 18px;
+                color: #aaa;
+            }
+            .active{
+                border-left: 5px solid #f80;
+                color: #000
+            }
+        }
+        .right{
+            flex: 1;
+            overflow: hidden;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            >img{
+                width: 100%;
+                height: 110px;
+            }
+            .every{
+                flex: 1;
+                overflow: hidden;
+                >div{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    dl{
+                        width: 33.33%;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        dt{
+                            width: 80%;
+                            height: 60px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        dd{
+                            font-size: 14px;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+
+        dl {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            dt {
+                font-size: 25px;
+            }
+        }
+        .active{
+            color: #ff0;
+        }
+    }
+}
